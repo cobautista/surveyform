@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet">
+    <title>Survey Form Activity</title>
+</head>
+<body>
+<!--HEAD-->
+<section>
+<div class="boxBG">
+
+    <h1 id="title">Avion School Survey Form</h1>
+    <p id="description">Thank you for taking the survey!</p>
+
+    <div id="body">
+
+<!--ENTER TEXT-->
+
+    <form id="survey-form">
+        <label id="name-label">
+            <input id="name" type="text" required/>
+            <span class="placeholder">Enter Your Name</span>
+        </label><br>
+
+        <label id="email-label">
+            <input id="email" type="email" required/>
+            <span class="placeholder">Enter Your Email</span>
+        </label><br>
+
+        <label id="number-label">
+            <input id="number" type="number" required/>
+            <span class="placeholder">Enter Your Age</span>
+        </label><br>
+        
+        <label id="phone-label">
+            <input id="phone" type="number" required/>
+            <span class="placeholder">Enter Your Phone #</span>
+        </label><br>
+
+<!-- DROPDOWN -->
+          
+<h2>Which part of the Precourse you love the most?</h2>
+
+<div class="select">
+    <select name="format" id="dropdown">
+                 
+       <option value="default"> </option>
+       <option value="Lesson1">Lesson 1</option>
+       <option value="Lesson2">Lesson 2</option>
+       <option value="Lesson3">Lesson 3</option>
+       <option value="Lesson4">Lesson 4</option>
+       <option value="Lesson5">Lesson 5</option>
+       <option value="Lesson6">Lesson 6</option>
+       <option value="Lesson7">Lesson 7</option>
+       <option value="Lesson8">Lesson 8</option>
+       <option value="Lesson9">Lesson 9</option>
+       <option value="Lesson10">Lesson 10</option>
+       <option value="Lesson11">Lesson 11</option>
+       <option value="Lesson12">Lesson 12</option>
+    </select>
+
+ </div>
+
+        <!--Radio button-->
+        
+        <h2>Would you recommend Avion School to a friend?</h2>
+
+        <div class="radiostyle">
+        <h3>Definitely</h3>
+        <label class="radio-btn">
+            <input type="radio" name="recommend" value="1"></input>
+            <span class="checkmark"></span>
+        </label>
+        <br>
+        <h3>Maybe</h3>
+        <label class="radio-btn">
+            <input type="radio" name="recommend" value="2"></input>
+            <span class="checkmark"></span>
+        </label> 
+        <br>
+        <h3>Sure</h3>
+            <label class="radio-btn">
+            <input type="radio" name="recommend" value="3"></input>
+            <span class="checkmark"></span>
+        </label>
+
+        </div>
+
+            <!--Checkbox-->
+            <div class="checkBoxes">
+            
+            <h2>What would you like to see improved? (Check all that apply)</h2>
+        <label class="checkboxBox">Front-end Projects
+            <input type="checkbox" name="improve" value="1"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Back-end Projects
+            <input type="checkbox" name="improve" value="2"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Data Visualization
+            <input type="checkbox" name="improve" value="3"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Challenges
+            <input type="checkbox" name="improve" value="4"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Open Source Community
+            <input type="checkbox" name="improve" value="5"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Gitter help rooms
+            <input type="checkbox" name="improve" value="6"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Videos
+            <input type="checkbox" name="improve" value="7"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">City Meetups
+            <input type="checkbox" name="improve" value="8"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Wiki
+            <input type="checkbox" name="improve" value="9"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Forum
+            <input type="checkbox" name="improve" value="10"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+        <label class="checkboxBox">Additional Courses
+            <input type="checkbox" name="improve" value="11"></input>
+            <span class="checkmark"></span>
+        </label>    
+            <br>
+            <br>
+        </div>
+
+        <div class="box">
+            <h2>Add comments or suggestions</h2>
+            <textarea id="comment" rows="4" cols="40" onkeypress="auto_grow(this)"></textarea>   
+
+        </div>
+        <br>
+        <input id="submit" type="submit" value="Submit">
+            
+            </form>
+            <div id="status" class="error">Thank you!</div>
+
+            </div>
+            <script src="style.js"></script>
+</div>
+</section>
+</body>
+</html>
